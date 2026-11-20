@@ -1,0 +1,9 @@
+clear
+
+norminette
+if [ norminette ]; then
+ echo "norm: OK!"
+fi
+cc -Wall -Werror -Wextra main.c ft_printf.c libft/libft.a -o prog
+
+./prog
